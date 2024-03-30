@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helix Plot Generator</title>
+    <link rel="stylesheet" href="graph.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Generate a 3D Helix Plot</h2>
+        <form id="helixForm">
+            <div class="input-group">
+                <label for="zMax">Max Value for Z:</label>
+                <input type="number" id="zMax" name="zMax" required>
+            </div>
+            <div class="input-group">
+                <label for="numPoints">Number of Scatter Points:</label>
+                <input type="number" id="numPoints" name="numPoints" required>
+            </div>
+            <button type="submit">Generate Plot</button>
+        </form>
+    </div>
+    <div id="plotContainer">
+        <!-- The generated plot will be displayed here, e.g., as an image or an interactive plot -->
+    </div>
+<script src="graph.js"></script>
+</body>
+</html>
